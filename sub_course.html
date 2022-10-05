@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+	<script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://unpkg.com/cuttr@1/dist/cuttr.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+
+<body>
+	<!-- ----------------------navbar start------------------------------- -->
+<nav class="navbar sticky-top navbar-expand-lg bg-blue navbar-dark py-4">
+  <div class="container-fluid mx-md-5">
+    <a class="navbar-brand poppins fw-400" href="index.html">SPREADING KNOWLEDGE</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: fit-content;text-align: center">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
+        <li class="nav-item n1">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+  
+        <li class="nav-item n2 dropdown d-flex justify-content-center">
+          <a class="nav-link" href="courses.html">Courses</a>
+          <a class="nav-link dropdown-toggle px-0" href="#" role="button" style="color: #fff;" data-bs-toggle="dropdown" aria-expanded="false">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sub_course.html">legal</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Media</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Competitive exams</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Languages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item n3">
+          <a class="nav-link"  href="blogs.html">Blog</a>
+        </li>
+        <li class="nav-item n4">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item n5">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item n6">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/wap.png" onmouseover="this.src='assets/img/wpc.png'"onmouseout="this.src='assets/img/wap.png'" alt="whatsapp">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/yt.png" onmouseover="this.src='assets/img/ytc.png'"onmouseout="this.src='assets/img/yt.png'" alt="youtube">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/insta.png" onmouseover="this.src='assets/img/instac.png'"onmouseout="this.src='assets/img/insta.png'" alt="instagram">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/fb.png" onmouseover="this.src='assets/img/fbc.png'"onmouseout="this.src='assets/img/fb.png'" alt="facebook">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/twit.png" onmouseover="this.src='assets/img/twitc.png'"onmouseout="this.src='assets/img/twit.png'" alt="twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<button class="callback-btn" onclick="show()">Get a Callback</button>
+<button class="callback-btn cbsm" onclick="show()"><i class="fa-solid fa-phone"></i></button>
+<div class="callback-form-wrapper">
+  <div class="callback-top-section">
+    <p class="merriweather callback-form-decs">Please fill out the form below to get a callback</p>
+    <p id="cancel" onclick="hide()"><i class="fa-solid fa-xmark"></i></p>
+  </div>
+  <div class="callback-bottom-section">
+    <div class="callback-form">
+        <div>
+          <input type="text" placeholder="First name" class="contact-inp">
+          <input type="text" placeholder="Last name" class="contact-inp">
+          <input type="text" placeholder="Contact no" class="contact-inp">
+          <input type="text" placeholder="Email ID" class="contact-inp">
+          <button class="callback-btn2">Get a Callback</button>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+	<!-- ----------------------navbar end------------------------------- -->
+
+
+<div class="section-5 container-fluid">
+	<div class="courses-main-box bg-fff">
+		<div class="carousel-title merriweather mb-2 text-center">Leagal Courses</div>
+		<p class="subcourse-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+		<div class="sub-course-card-wrapper d-flex justify-content-center my-4">
+			<div class="sub-course-card">
+				<a href="course_desc.html" class="course-content-wrapper">
+					<div class="course-img">
+						<img src="assets/img/img1.png" alt="">
+					</div>
+					<div>
+						<p class="course-title2">Basic legal knowledge</p>
+					</div>
+				</a>
+				<a href="course_desc.html" class="course-content-wrapper">
+					<div class="course-img">
+						<img src="assets/img/ipc.png" alt="">
+					</div>
+					<div>
+						<p class="course-title2">Indian panel code</p>
+					</div>
+				</a>
+				<a  href="course_desc.html" class="course-content-wrapper">
+					<div class="course-img">
+						<img src="assets/img/contract.png" alt="">
+					</div>
+					<div>
+						<p class="course-title2">Contract</p>
+					</div>
+				</a>
+				<a href="course_desc.html" class="course-content-wrapper">
+					<div class="course-img">
+						<img src="assets/img/cpc.png" alt="">
+					</div>
+					<div>
+						<p class="course-title2">Criminal procedure code</p>
+					</div>
+				</a>
+				<a href="course_desc.html" class="course-content-wrapper">
+					<div class="course-img">
+						<img src="assets/img/icst.png" alt="">
+					</div>
+					<div>
+						<p class="course-title2">Indian constitution</p>
+					</div>
+				</a>
+				<a href="course_desc.html" class="course-content-wrapper">
+					<div class="course-img">
+						<img src="assets/img/lgdf.png" alt="">
+					</div>
+					<div>
+						<p class="course-title2">Legal Drafting</p>
+					</div>
+				</a>
+				<a href="course_desc.html" class="course-content-wrapper">
+					<div class="course-img">
+						<img src="assets/img/lscs.png" alt="">
+					</div>
+					<div>
+						<p class="course-title2">Llb subjects crash courses</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+  </div>
+</div>
+
+<footer>
+<div class="section-7 container-fluid">
+	<div class="row py-5 px-2">
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-lg-6">
+					<img  src="assets/img/map.png" alt="" style="width:250px;height:250px">
+					<p class="mb-0 mt-2">Copyright@www.paurasartvison2022</p>
+				</div>
+				<div class="col-lg-6">
+					<p class="footer-title mt-4 mt-lg-0">Spreading Knowledge</p>
+					<P class="footer-content">L. Nappo Road, Matunga, Dadar East,Mumbai - 400019 Maharashtra, India</P>
+					<div class="mt-3">
+						<i class="fa-solid fa-phone"></i>
+						<span class="footer-content">8842915370</span>
+					</div>
+					<div class="mt-3">
+						<img src="assets/img/wpic.png" alt="" style="width:16px">
+						<span class="footer-content">8842915370</span>
+					</div>
+					<div class="mt-3">
+						<i class="fa-solid fa-envelope"></i>
+						<span class="footer-content">Paurasartvision@gmail.com</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-md-6">
+			<p class="footer-title mt-4 mt-lg-0">Terms</p>
+			<P class="footer-content">Terms & Conditions</P>
+			<P class="footer-content">Privacy policy</P>
+				<div class="sub-inp-wrapper">
+						<input type="text" class="form-control sub-inp" placeholder="Enter your email to subscribe our newsletter">
+						<button type="button" class="btn sub-btn">Subscribe</button>
+				</div>
+		</div>	
+	</div>
+</div>
+
+
+</footer>
+<script>
+$('.n2').addClass("nav-active")
+</script>
+</body>
+</html>

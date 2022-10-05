@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+	<script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://unpkg.com/cuttr@1/dist/cuttr.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+
+<body>
+	<!-- ----------------------navbar start------------------------------- -->
+<nav class="navbar sticky-top navbar-expand-lg bg-blue navbar-dark py-4">
+  <div class="container-fluid mx-md-5">
+    <a class="navbar-brand poppins fw-400" href="index.html">SPREADING KNOWLEDGE</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: fit-content;text-align: center">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
+        <li class="nav-item n1">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+  
+        <li class="nav-item n2 dropdown d-flex justify-content-center">
+          <a class="nav-link" href="courses.html">Courses</a>
+          <a class="nav-link dropdown-toggle px-0" href="#" role="button" style="color: #fff;" data-bs-toggle="dropdown" aria-expanded="false">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sub_course.html">legal</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Media</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Competitive exams</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Languages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item n3">
+          <a class="nav-link"  href="blogs.html">Blog</a>
+        </li>
+        <li class="nav-item n4">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item n5">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item n6">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/wap.png" onmouseover="this.src='assets/img/wpc.png'"onmouseout="this.src='assets/img/wap.png'" alt="whatsapp">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/yt.png" onmouseover="this.src='assets/img/ytc.png'"onmouseout="this.src='assets/img/yt.png'" alt="youtube">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/insta.png" onmouseover="this.src='assets/img/instac.png'"onmouseout="this.src='assets/img/insta.png'" alt="instagram">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/fb.png" onmouseover="this.src='assets/img/fbc.png'"onmouseout="this.src='assets/img/fb.png'" alt="facebook">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/twit.png" onmouseover="this.src='assets/img/twitc.png'"onmouseout="this.src='assets/img/twit.png'" alt="twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<button class="callback-btn" onclick="show()">Get a Callback</button>
+<button class="callback-btn cbsm" onclick="show()"><i class="fa-solid fa-phone"></i></button>
+<div class="callback-form-wrapper">
+  <div class="callback-top-section">
+    <p class="merriweather callback-form-decs">Please fill out the form below to get a callback</p>
+    <p id="cancel" onclick="hide()"><i class="fa-solid fa-xmark"></i></p>
+  </div>
+  <div class="callback-bottom-section">
+    <div class="callback-form">
+        <div>
+          <input type="text" placeholder="First name" class="contact-inp">
+          <input type="text" placeholder="Last name" class="contact-inp">
+          <input type="text" placeholder="Contact no" class="contact-inp">
+          <input type="text" placeholder="Email ID" class="contact-inp">
+          <button class="callback-btn2">Get a Callback</button>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+	<!-- ----------------------navbar end------------------------------- -->
+
+<div class="blog-wrapper">
+	<img src="assets/img/blog1.png" class="blog-top-img" alt="">
+	<div class="gray-overlay"></div>
+</div>
+
+<div class="blog-section-1 blog-pages">
+		<div class="blog-title-card merriweather">स्त्री अनुबंध</div>
+		<div class="blog-content-wrapper bg-fff">
+			<div class="blog-page-contents">
+				<p>देवदत्त कर्वे एका मानसशास्त्राचा प्राध्यापक जो तरुण चयातच आपल्या हुषारीमुळे कॉलेजचा उपप्राचार्य झाला. देवदत्त विद्यार्थ्यांचं मानसशास्त्र फार चांगल समजत असे त्यामुळे ते विद्यार्थ्यात फार लोक प्रिय होते. देवदत्त कर्वे उत्तम लेखक असल्यामुळे त्यांची पुस्तक लोकांना आवडत असतं. त्यांच व्यक्तिमत्व छाप पाडण्यासारखं असल्यामुळे ते लोकांना आवडायला लागले आणि मग त्यातच त्यांनी द्वैत अद्वैत वादावर लिहिलेल्या पुस्तकानं प्रचंड लोकप्रियता मिळवली. सरकारी पातळ्यांवर त्यांचा सत्कार, पुरस्कार मिळवले. अद्वैतवाद यांच्या पुढच्या पुस्तकाने त्यांची जनमानसांतली प्रतिमा इतकी बदलली की, देवदत्त कर्वे प्राचार्यांचे आचार्य केव्हा झाले हे त्यांना कळलेच नाही.</p>
+				<P> होय देवदत्त कर्वे आता लोकांमध्ये आचार्य म्हणून प्रसिध्द पावायला लागले. त्यांच्या प्रत्येक शब्दला आता महत्व प्राप्त झाले. राजकारण साहित्य, कला सगळया क्षेत्रात आचार्याचा शब्द प्रमाण मानला जाऊ लागला. विशेष म्हणजे आचार्य वैयक्तिक कुठल्याही स्वार्थाशिवाय लोकांची काम करत असतं त्यामुळे त्यांचे विरोधक म्हणत आचार्यांना लोकांची काम करण्याची नशा आहे. आचार्य, कुठल्याही प्रकारच्या समाजाच्या स्वारस्थ्य बिधडवणा या पदार्थाच्या कट्टर विरोधात होते आणि हया विरोधामुळेच या धंदयातील लोक त्यांच्या विरुध्द गेले.</P>
+				<P>आचार्याना फक्त एकच मुलगा समीरन त्याचं नाव आणि पत्नी लीलादेवी हे दोघंही आचार्याच्या मोठेपणाचा पध्दतशीर फायदा उचलण्यात वाकबगार होते आणि त्या गोष्टीची आचार्याना अत्यंत चीड होती. त्यामुळे संसारामध्ये आचार्य तसे बरेचसे उदासीनच होते. असंख्य सुंदर स्त्रियातुध्दा आचार्याच्या अनुयायी होत्या पण आचार्य सत्शील आणि चारित्र्यवान होते. पण हया गोष्टीवर त्यांची पत्नी लीलादेवी हिचा विश्वास नव्हता.</P>
+				<P>हयाच आचार्याच्या विरोधात आधाडी उघडलेले रणजील खन्ना आचार्याना बदनाम करण्याचा चंग बांधतात आणि त्यासाठी ते हाताशी धरतात निरंजन नावाच्या तरुण लेखकाला जो आचार्याच्या जीवनाचा अभ्यास करत असतो. रणजित खन्ना वर्तमानपत्र स्वतःच काढतात आणि त्याद्वारे ते बदनामी आचार्याची सुरु करतात. संपादक असतो निरंजन. निरंजन हा तरुण आचार्याच्या विरोधात लिखाण करताना ज्या गोष्टी सर्वसामान्यांना माहित नाहीत बरोबर त्याच गोष्टी तो वर्तमानपत्रात छापतो. त्यामुळे आचार्य अस्वस्थ होतात. आचार्याचे अनुयायी, मुलगा सगळे निरंजनवर चिडतात पण आचार्य न चिडता त्याची भेट घेतात. त्यांना तो तरुण आवडतो. ते त्याची संपुर्ण माहिती मिळवतात आणि जे कळतं ते अत्यंत धक्कादायक असतं. तीस वर्षापूर्वी म्हणजे लग्नापूर्वी आचार्य एका तरुणीच्या प्रेमात असतात आणि आताची आचार्याची पत्नी लीलादेवी ही त्या तरुणीची मैत्रीण असते. तिचं नाव असत आशा. त्या दोघांच्या प्रेमाच्यामध्ये गैरसमज निर्माण करुन लीलादेवी आचार्याना पटकावतात. गैरसमज अत्यंत टोकाचा असतो. आचार्यांच्या लग्नाची खोटी पत्रिका ती आशाच्या हातात ठेवते आणि आशाच्या लग्नाची खोटी पत्रिका आचार्याच्या हातात ठेवते. खात्री करुन न घेता दोघांचे संबंध संपतात. आशा मात्र आचार्यांना विसरु शकत नाही. कारण ती आचार्याच्या मुलाची आई होणार असते. ती त्याला त्याचा हक्क मिळवून देण्यासाठी लढणार असते. तसेच होते. ती निरंजनला म्हणजेच आचार्याच्याच मुलाला त्यांच्या विरोधात उभी करते</P>
+				<P>आचार्य हे सगळं पाहून विद्ध होतात. ते आपल्या संपत्तीतील अर्धावाटा समीरन आणि लीलादेवीला देतात आणि अर्धावाटा आशादेवी आणि निरंजनला देतात. पण निरंजन त्याला ठाम नकार देतो. तो सांगतो आम्हांला तुमचा सहवास हवा. आचार्य सार्वजनिक जीवनातून निवृत्ती स्वीकारतात आणि आशा आणि निरंजन सोबत निघून जातात.</P>
+
+				<P> ही कथा आहे एका आदर्श शिक्षकाची. एका आदर्श आचार्याची. जे अद्वैत वादाचा पुरस्कार करताना सतत समाजाच्या भल्याचा विचार करणा-या हुकमत गाजवणा-या धुरीणाची पण त्याने सतत लोकांच्या भल्याचाच विचार केला. किंबहुना लोकांच भलं करण्याचं आणि स्वतःच मोठेपण जपण्याचं त्यांना व्यसनचं होतं. पण त्याचबरोबर वेळ येताच ते सर्वस्वाचा त्याग ही करतात. ही कथा आहे अशा व्यक्तीची.</P>
+			</div>
+			<div class="blog-page-bottom">
+				<hr>
+				<div class="share">
+					<span>Share <i class="fa-solid fa-share"></i></span>
+				</div>
+				<div class="merriweather cm mb-3">Comments</div>
+				<div class="comment-box mb-3 ">
+					<div>Mr.Nobody</div>
+					<p>Lorem ipsum dolor sit amet. Nam recusandae laudantium ut iusto labore a reprehenderit enim. Eum quae pariatur in cupiditate unde aut dolores placeat.</p>
+				</div>
+				<div class="comment-box mb-3">
+					<div>Mr.Nobody</div>
+					<p>Lorem ipsum dolor sit amet. Nam recusandae laudantium ut iusto labore a reprehenderit enim. Eum quae pariatur in cupiditate unde aut dolores placeat.</p>
+				</div>
+				<div class="comment-box mb-3">
+					<div>Mr.Nobody</div>
+					<p>Lorem ipsum dolor sit amet. Nam recusandae laudantium ut iusto labore a reprehenderit enim. Eum quae pariatur in cupiditate unde aut dolores placeat.</p>
+				</div>
+				<div class="merriweather cm mb-3">Leave a Comment</div>
+				<div class="comment-box mb-3 ">
+					<div class="d-flex contact-inp-wrapper ">
+						<input type="text" class="contact-inp" placeholder="First name">
+						<input type="text" class="contact-inp" placeholder="Last name">
+					</div>
+					<div class="d-flex contact-inp-wrapper ">
+						<input type="email" class="contact-inp" placeholder="Email ID">
+					</div>
+					<div class="d-flex contact-inp-wrapper ">
+						<textarea class="contact-inp" placeholder="Comment"></textarea>
+					</div>
+					<div class="d-flex contact-inp-wrapper ">
+						<button class="btn btn-primary submit-btn">Submit</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+</div>
+
+<footer>
+<div class="section-7 container-fluid">
+	<div class="row py-5 px-2">
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-lg-6">
+					<img  src="assets/img/map.png" alt="" style="width:250px;height:250px">
+					<p class="mb-0 mt-2">Copyright@www.paurasartvison2022</p>
+				</div>
+				<div class="col-lg-6">
+					<p class="footer-title mt-4 mt-lg-0">Spreading Knowledge</p>
+					<P class="footer-content">L. Nappo Road, Matunga, Dadar East,Mumbai - 400019 Maharashtra, India</P>
+					<div class="mt-3">
+						<i class="fa-solid fa-phone"></i>
+						<span class="footer-content">8842915370</span>
+					</div>
+					<div class="mt-3">
+						<img src="assets/img/wpic.png" alt="" style="width:16px">
+						<span class="footer-content">8842915370</span>
+					</div>
+					<div class="mt-3">
+						<i class="fa-solid fa-envelope"></i>
+						<span class="footer-content">Paurasartvision@gmail.com</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-md-6">
+			<p class="footer-title mt-4 mt-lg-0">Terms</p>
+			<P class="footer-content">Terms & Conditions</P>
+			<P class="footer-content">Privacy policy</P>
+				<div class="sub-inp-wrapper">
+						<input type="text" class="form-control sub-inp" placeholder="Enter your email to subscribe our newsletter">
+						<button type="button" class="btn sub-btn">Subscribe</button>
+				</div>
+		</div>	
+	</div>
+</div>
+
+
+
+</footer>
+<script>
+$('.n3').addClass("nav-active")
+</script>
+</body>
+</html>

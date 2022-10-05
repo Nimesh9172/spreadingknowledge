@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+	<script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://unpkg.com/cuttr@1/dist/cuttr.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+
+<body>
+	<!-- ----------------------navbar start------------------------------- -->
+<nav class="navbar sticky-top navbar-expand-lg bg-blue navbar-dark py-4">
+  <div class="container-fluid mx-md-5">
+    <a class="navbar-brand poppins fw-400" href="index.html">SPREADING KNOWLEDGE</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: fit-content;text-align: center">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
+        <li class="nav-item n1">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+  
+        <li class="nav-item n2 dropdown d-flex justify-content-center">
+          <a class="nav-link" href="courses.html">Courses</a>
+          <a class="nav-link dropdown-toggle px-0" href="#" role="button" style="color: #fff;" data-bs-toggle="dropdown" aria-expanded="false">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sub_course.html">legal</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Media</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Competitive exams</a></li>
+            <li><a class="dropdown-item" href="sub_course.html">Languages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item n3">
+          <a class="nav-link"  href="blogs.html">Blog</a>
+        </li>
+        <li class="nav-item n4">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item n5">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item n6">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/wap.png" onmouseover="this.src='assets/img/wpc.png'"onmouseout="this.src='assets/img/wap.png'" alt="whatsapp">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/yt.png" onmouseover="this.src='assets/img/ytc.png'"onmouseout="this.src='assets/img/yt.png'" alt="youtube">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/insta.png" onmouseover="this.src='assets/img/instac.png'"onmouseout="this.src='assets/img/insta.png'" alt="instagram">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/fb.png" onmouseover="this.src='assets/img/fbc.png'"onmouseout="this.src='assets/img/fb.png'" alt="facebook">
+          </a>
+          <a class="img-link" href="#">
+            <img class="socm-icons" src="assets/img/twit.png" onmouseover="this.src='assets/img/twitc.png'"onmouseout="this.src='assets/img/twit.png'" alt="twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<button class="callback-btn" onclick="show()">Get a Callback</button>
+<button class="callback-btn cbsm" onclick="show()"><i class="fa-solid fa-phone"></i></button>
+<div class="callback-form-wrapper">
+  <div class="callback-top-section">
+    <p class="merriweather callback-form-decs">Please fill out the form below to get a callback</p>
+    <p id="cancel" onclick="hide()"><i class="fa-solid fa-xmark"></i></p>
+  </div>
+  <div class="callback-bottom-section">
+    <div class="callback-form">
+        <div>
+          <input type="text" placeholder="First name" class="contact-inp">
+          <input type="text" placeholder="Last name" class="contact-inp">
+          <input type="text" placeholder="Contact no" class="contact-inp">
+          <input type="text" placeholder="Email ID" class="contact-inp">
+          <button class="callback-btn2">Get a Callback</button>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+	<!-- ----------------------navbar end------------------------------- -->
+
+<div class="container-fluid p-0">
+	<div class="section-wrapper d-flex">
+		<div class="left-section">
+			<div class="left-img-wrapper">
+				<img src="assets/img/espa.svg" alt="">
+				<div class="cd-img-overlay">
+					<a href="sub_course.html"><i class="fa-solid fa-arrow-left"></i></a>
+					<h3 class="merriweather">German A1.1 Course</h3>
+				</div>
+			</div>
+			<div class="course-links-wrapper">
+				<a href="course_desc.html" >Course Description</a>
+				<a href="class_schedule.html" class="active">Class Schedule</a>
+				<a href="syllabus.html">Curriculum/Syllabus</a>
+				<a href="faq.html">FAQ</a>
+			</div>
+			<div class="enroll-btn-wrapper">
+				<button onclick="window.location.href='enrollform.html'">Enroll now</button>
+			</div>
+		</div>
+		<div class="main-section">
+			<h4 class="merriweather">German A1.1 Course</h4>
+			<h5 class="merriweather">Course Syllabus</h5>
+			<div class="course-content-wrapper2">
+				<div><span class="title">Venue:</span><span class="para mx-2">Online Zoom Meeting</span></div>
+				<div class="my-2"><span class="title">Start Date:</span><span class="para mx-2">17th August 2022</span></div>
+				<div class="my-2"><span class="title">Duration:</span><span class="para mx-2">40 hours</span></div>
+				<div class="my-2"><span class="title">Time:</span><span class="para mx-2">Monday to Friday, 9:00PM to 10:00PM</span></div>
+				<div class="my-2"><span class="title">Fees:</span><span class="para mx-2">Rs. 4800/-</span></div>
+				<div class="my-2"><span class="title">Batch size:</span><span class="para mx-2">Maximum 20-25 participants (Minimum age 13 years and above)</span></div>
+				<div class="my-2"><span class="title">Study Material:</span><span class="para mx-2">Participants will get study material (PDFs, audios, videos, online links for interactive exercises etc.) compiled by the teacher in the tuition fees itself. Participants can also view all recorded lectures during the period of the course.</span></div>
+				<div class="enroll-btn-wrapper enroll-2">
+					<button onclick="window.location.href='enrollform.html'">Enroll now</button>
+				</div>
+			</div>
+		</div>
+		
+	</div>	
+</div>
+
+<script>
+$('.n2').addClass("nav-active")
+</script>
+</body>
+</html>
