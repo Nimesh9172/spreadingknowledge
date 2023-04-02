@@ -16,7 +16,7 @@ $(document).ready(function () {
 	});
 
 	$("#cr1").owlCarousel({
-		loop: true,
+		loop: false,
 		margin: 20,
 		autoWidth: true,
 		nav: true,
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 	});
 	$("#cr2").owlCarousel({
-		loop: true,
+		loop: false,
 		margin: 20,
 		dots: false,
 		autoWidth: true,
