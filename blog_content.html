@@ -13,7 +13,6 @@
 	<script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script src="https://unpkg.com/cuttr@1/dist/cuttr.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </head>
 
@@ -35,7 +34,7 @@
   
         <li class="nav-item n2 dropdown d-flex justify-content-center">
           <a class="nav-link" href="courses.html">Courses</a>
-          <a class="nav-link dropdown-toggle px-0" href="#" role="button" style="color: #fff;" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle px-0"  role="button" style="color: #fff;" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="sub_course.html">legal</a></li>
@@ -142,17 +141,29 @@
 				<div class="merriweather cm mb-3">Leave a Comment</div>
 				<div class="comment-box mb-3 ">
 					<div class="d-flex contact-inp-wrapper ">
-						<input type="text" class="contact-inp" placeholder="First name">
-						<input type="text" class="contact-inp" placeholder="Last name">
+						<div class="input_with_msg_wrapper" style="width: 240px;">
+							<input type="text" class="contact-inp" placeholder="First name" name="first_name">
+							<span class="input_msg d-none">Please Enter First Name</span>
+						</div>
+						<div class="input_with_msg_wrapper" style="width: 240px;">
+							<input type="text" class="contact-inp" placeholder="Last name" name="last_name">
+							<span class="input_msg d-none">Please Enter Last Name</span>
+						</div>
 					</div>
 					<div class="d-flex contact-inp-wrapper ">
-						<input type="email" class="contact-inp" placeholder="Email ID">
+						<div class="input_with_msg_wrapper">
+							<input type="email" class="contact-inp" placeholder="Email ID" name="email">
+							<span class="input_msg d-none">Please Enter email address</span>
+						</div>
 					</div>
 					<div class="d-flex contact-inp-wrapper ">
-						<textarea class="contact-inp" placeholder="Comment"></textarea>
+						<div class="input_with_msg_wrapper">
+							<textarea class="contact-inp" placeholder="Comment" name="comment"></textarea>
+							<span class="input_msg d-none">Please enter comment</span>
+						</div>
 					</div>
 					<div class="d-flex contact-inp-wrapper ">
-						<button class="btn btn-primary submit-btn">Submit</button>
+						<button class="btn btn-primary submit-btn" id="submitform">Submit</button>
 					</div>
 				</div>
 
@@ -207,6 +218,25 @@
 </footer>
 <script>
 $('.n3').addClass("nav-active")
+$(document).ready(function(){
+	$('#submitform').click(function(e){
+
+		let first_name =  $('input[name=first_name]')
+		let last_name =  $('input[name=last_name]')
+		let email =  $('input[name=email]')
+		let comment =  $('textarea[name=comment]')
+
+
+		first_name.val() && first_name.val().length > 1 ?  first_name.next().addClass('d-none'):first_name.next().removeClass('d-none')
+
+		last_name.val() && last_name.val().length > 1 ?  last_name.next().addClass('d-none'):last_name.next().removeClass('d-none')
+		
+		email.val() && email.val().length > 1 ?  email.next().addClass('d-none'):email.next().removeClass('d-none')
+
+		comment.val() && comment.val().length > 1 ?  comment.next().addClass('d-none'):comment.next().removeClass('d-none')
+		// first_name.val() && first_name.val().length > 0 ?  console.log("yesss") : console.log("helo")
+	})
+})
 </script>
 </body>
 </html>

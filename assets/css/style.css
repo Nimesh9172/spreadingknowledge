@@ -13,6 +13,35 @@ body{
   overflow: overlay;
 }
 
+a,a:hover{
+  text-decoration: none;
+}
+
+
+.limit-line4{
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.limit-line3{
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.limit-line2{
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* scroll bar css start` */
 
 ::-webkit-scrollbar {
@@ -353,11 +382,13 @@ h5 {
 }
 .achivements-wrapper {
   position: absolute;
-  top: 105px;
   width: 43%;
-  left: 28%;
   max-width: 383px;
+  bottom: 59%;
+  right: 50%;
+  transform: translate(50%, 50%);
 }
+
 .achivements-wrapper > .title {
   font-size: 26px;
   font-weight: 700;
@@ -468,8 +499,8 @@ h5 {
   font-weight: 500;
   text-align: center;
   font-size: 17px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 11px 9px 0px 8px;
+  min-height: 51px;
 }
 
 .icon-wrapper {
@@ -514,6 +545,9 @@ h5 {
   border-radius: 8px;
   padding: 16px 20px;
   background: #f5f9ff;
+}
+.testimonials-wrapper p{
+  min-height: 72px;
 }
 
 .carousel-wrapper {
@@ -675,7 +709,7 @@ h5 {
 
 .overlay2 span,
 .overlay2 i,
-.overlay2 p {
+.overlay2 .ov2-description{
   color: #fff;
   text-align: center;
 }
@@ -687,7 +721,10 @@ h5 {
 
 .ov2-description {
   font-size: 16px;
-  padding: 15px;
+  margin: 23px 15px;
+  display: block;
+  cursor: pointer;
+  
 }
 
 .overlay2 i {
@@ -1102,6 +1139,24 @@ h5 {
 
 .comment-box .contact-inp-wrapper:nth-child(4) { width: min(80%, 981px);justify-content: end;}
 
+.input_with_msg_wrapper{
+  position: relative;
+  width: 100%;
+}
+.input_msg{
+  position: absolute;
+  bottom: -16px;
+  left: 4px;
+  color: crimson;
+  font-size: 13px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 .submit-btn {
   color: #fff;
   border: none;
@@ -1145,6 +1200,10 @@ h5 {
   border-bottom-left-radius: 0;
   border: 0;
 }
+.img-card-with-title .img-card img{
+  width: 100%;
+  height: 100%;
+}
 
 .img-card {
   width: min(100%, 479px);
@@ -1155,7 +1214,8 @@ h5 {
   margin: auto;
 }
 
-.img-card-desc {padding: 16px 25px;}
+
+.img-card-desc {margin: 16px 25px;min-height:104px}
 /* gallery css end */
 
 /* about us css start */
@@ -1209,6 +1269,11 @@ h5 {
   background: #909090;
   border: 1px solid #cecece;
   border-radius: 10px;
+}
+
+.about-img-content img{
+  width: 100%;
+  height: 100%;
 }
 
 .about-content-inside{width: min(100% - 1em,450px);margin: auto;}
@@ -1440,7 +1505,7 @@ h5 {
 }
 
 @media only screen and (max-width: 786px) {
-  .achivements-wrapper {top: 52px;}
+  .achivements-wrapper {top: -30px;}
   .about-content-wrapper {flex-wrap: wrap;flex-direction: column-reverse;}
   .about-content-wrapper2 {flex-direction: column;}
   .about-img-content {height: 332px;}
@@ -1499,7 +1564,9 @@ h5 {
   /* .contact-main-container .row-wrapper .col-wrapper{
 		border-radius: 10px;
 	} */
-
+  .comment-box .contact-inp-wrapper{
+    flex-wrap: wrap;
+  }
   .col-wrapper .col-md-6:nth-of-type(1) {
     border-radius: 0;
     border-top-left-radius: 10px;

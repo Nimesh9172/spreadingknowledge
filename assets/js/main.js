@@ -59,17 +59,6 @@ $(document).ready(function () {
 		$(this).parent().next().animate({ height: 'toggle' },300)
 	})
 
-	$('.about-para').Cuttr({
-		//options here
-		truncate: 'words',
-		length: 21
-	});
-
-	$('.testimonial-para').Cuttr({
-		//options here
-		truncate: 'words',
-		length: 11
-	});
 
 
 
