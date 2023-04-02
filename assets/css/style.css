@@ -378,12 +378,13 @@ h5 {
 .content-img-1 {
   height: 100%;
   max-width: 37em;
+  opacity: .4;
   width: 100%;
 }
 .achivements-wrapper {
   position: absolute;
-  width: 43%;
-  max-width: 383px;
+  width: 79%;
+  max-width: 437px;
   bottom: 59%;
   right: 50%;
   transform: translate(50%, 50%);
@@ -449,6 +450,10 @@ h5 {
   font-weight: 700;
   color: #001e4b;
 }
+
+.our-vision-desc{
+  min-height: 72px;
+}
 .vision-box {
   position: unset !important;
 }
@@ -497,7 +502,7 @@ h5 {
 
 .course-content-wrapper .course-title2 {
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   font-size: 17px;
   margin: 11px 9px 0px 8px;
   min-height: 51px;
@@ -1443,6 +1448,14 @@ h5 {
 /* enrollform end */
 
 @media only screen and (max-width: 986px) {
+ 
+}
+@media only screen and (max-width: 1060px) {
+  .navbar-expand-lg .navbar-toggler{
+    display: unset;
+  }
+
+  .dropdown-toggle{display: none;}
 
   /* navbar slide from left start */
   .content-img-2{
@@ -1456,7 +1469,8 @@ h5 {
         left: -100%;
         width: min(100% - 3em) !important;
         transition: all 0.4s ease;
-        display: block;
+        display: flex !important;
+        flex-direction: column;
         opacity: 0.8;
         height: 100vh;
     }
