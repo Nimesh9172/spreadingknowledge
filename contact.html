@@ -95,29 +95,58 @@
 				<div class="col-md-6">
 					<div class="blog-heading merriweather contact-heading">Please fill form to get a callback</div>
 					<div class="d-flex contact-inp-wrapper mt-5">
-						<input type="text" class="contact-inp" placeholder="First name">
-						<input type="text" class="contact-inp" placeholder="Last name">
+
+						<div class="input_with_msg_wrapper" style="width: 240px;">
+							<input type="text" class="contact-inp" placeholder="First name" name="first_name">
+							<span class="input_msg d-none">Please Enter First Name</span>
+						</div>
+
+						<div class="input_with_msg_wrapper" style="width: 240px;">
+							<input type="text" class="contact-inp" placeholder="Last name" name="last_name">
+							<span class="input_msg d-none">Please Enter Last Name</span>
+						</div>
+
 					</div>
 					<div class="d-flex contact-inp-wrapper">
-						<input type="text" class="contact-inp" placeholder="Contact no.">
-						<input type="text" class="contact-inp" placeholder="Email ID">
+						<div class="input_with_msg_wrapper" style="width: 240px;">
+							<input type="text" name="contact_no" class="contact-inp" placeholder="Contact no.">
+							<span class="input_msg d-none">Please Enter contact no.</span>
+						</div>
+						<div class="input_with_msg_wrapper" style="width: 240px;">
+							<input type="text"  name="email" class="contact-inp" placeholder="Email ID">
+							<span class="input_msg d-none">Please Enter email</span>
+						</div>
 					</div>
 					<div class="course-title">Course Interested in :</div>
+					
 					<div class="d-flex contact-inp-wrapper">
-						<select name="" id="" class="contact-sel">
-							<option value="">Select Category</option>
-							<option value="">Select Category</option>
-						</select>
-						<select name="" id="" class="contact-sel">
-							<option value="">Select Course</option>
-							<option value="">Select Course</option>
-						</select>
+						<div class="input_with_msg_wrapper" style="width: 240px;">
+							<select name="category" class="contact-sel">
+								<option value="undefined">Select Category</option>
+								<option value="category 1">Category 1</option>
+								<option value="category 2">Category 2</option>
+								<option value="category 3">Category 3</option>
+							</select>
+							<span class="input_msg d-none">Please select category</span>
+						</div>
+						<div class="input_with_msg_wrapper" style="width: 240px;">
+							<select name="course" class="contact-sel">
+								<option value="undefined">Select Course</option>
+								<option value="course 1">course 1</option>
+								<option value="course 2">course 2</option>
+								<option value="course 3">course 3</option>
+							</select>
+							<span class="input_msg d-none">Please select Courses</span>
+						</div>
 					</div>
 					<div class="d-flex contact-inp-wrapper">
-						<textarea name="" id="" class="contact-msg" placeholder="Message"></textarea>
+						<div class="input_with_msg_wrapper">
+							<textarea name="message" class="contact-msg" placeholder="Message"></textarea>
+							<span class="input_msg d-none">Please enter message</span>
+						</div>
 					</div>
 					<div class="d-flex contact-inp-wrapper">
-						<button class="call-btn">Get a Callback</button>
+						<button class="call-btn" id="submitform2">Get a Callback</button>
 					</div>
 				</div>
 				<div class="col-md-6 ">
@@ -155,11 +184,11 @@
 							</a>
 						</div>
 						<div class="mt-5 d-flex">
-								<img src="assets/img/map.png" class="map-img" alt="">
-								<div class="contact-address">
-									<div>Spreading Knowledge</div>
-									<p>L. Nappo Road, Matunga, Dadar East, Mumbai - 400019 Maharashtra, India</p>
-								</div>
+							<img src="assets/img/map.png" class="map-img" alt="">
+							<div class="contact-address">
+								<div>Spreading Knowledge</div>
+								<p>L. Nappo Road, Matunga, Dadar East, Mumbai - 400019 Maharashtra, India</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -171,6 +200,37 @@
 
 <script>
 $('.n6').addClass("nav-active")
+$(document).ready(function(){
+	$('#submitform2').click(function(e){
+
+		let first_name =  $('input[name=first_name]')
+		let last_name =  $('input[name=last_name]')
+		let contact =  $('input[name=contact_no]')
+		let email =  $('input[name=email]')
+		let message =  $('textarea[name=message]')
+		let category =  $('select[name=category]')
+		let course =  $('select[name=course]')
+
+
+		console.log(category.val(),course.val())
+
+
+		first_name.val() && first_name.val().length > 1 ?  first_name.next().addClass('d-none'):first_name.next().removeClass('d-none')
+
+		category.val() != "undefined" && category.val().length > 1 ?  category.next().addClass('d-none'):category.next().removeClass('d-none')
+		
+		course.val() != "undefined" && course.val().length > 1 ?  course.next().addClass('d-none'):course.next().removeClass('d-none')
+
+		last_name.val() && last_name.val().length > 1 ?  last_name.next().addClass('d-none'):last_name.next().removeClass('d-none')
+		
+		contact.val() && contact.val().length > 1 ?  contact.next().addClass('d-none'):contact.next().removeClass('d-none')
+
+		email.val() && email.val().length > 1 ?  email.next().addClass('d-none'):email.next().removeClass('d-none')
+
+		message.val() && message.val().length > 1 ?  message.next().addClass('d-none'):message.next().removeClass('d-none')
+		// first_name.val() && first_name.val().length > 0 ?  console.log("yesss") : console.log("helo")
+	})
+})
 </script>
 </body>
 </html>

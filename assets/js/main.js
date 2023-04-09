@@ -38,6 +38,8 @@ $(document).ready(function () {
 		loop: false,
 		margin: 20,
 		dots: false,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 		autoWidth: true,
 		responsive: {
 			0: {
