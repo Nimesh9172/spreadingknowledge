@@ -1622,6 +1622,7 @@ h5 {
 	} */
   .comment-box .contact-inp-wrapper{
     flex-wrap: wrap;
+    row-gap: 10px;
   }
   .col-wrapper .col-md-6:nth-of-type(1) {
     border-radius: 0;
@@ -1652,3 +1653,20 @@ h5 {
   width: 150px;
 }
 }
+
+@media only screen and (max-width: 560px) {
+  .contact-inp-wrapper{
+    flex-direction: column;
+    row-gap: 10px;
+
+  }
+  .input_with_msg_wrapper{
+    width: 100% !important;
+  }
+
+  .contact-inp{
+    width: 100%;
+  }
+
+}
+
